@@ -1,0 +1,88 @@
+.Team{
+    /* height: 100vh; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    position: relative;
+    
+}
+
+.Team__Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.Team__Heading{
+    font-size: 40px;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.Team__Subheading, .Team__EndQuote{
+    font-size: 24px;
+    font-weight: 400;
+    color: #7F7C82;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.Team__Members{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns:  repeat(auto-fit, minmax(100px, 220px)); 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.TeamCard{
+    margin: 24px 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.TeamCard__PersonDetails-Name{
+    margin-bottom: 6px;
+}
+
+.TeamCard__ImageContainer{
+    width: 180px;
+    height: 180px;  
+}
+
+.TeamCard__ImageContainer > img{
+   width: 100%;
+   height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    height: 100%;
+}
+
+.TeamCard__PersonDetails{
+    font-family: 'Roboto';
+    padding: 28px 0;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.TeamCard__PersonDetails-Position{
+    font-size: 14px;
+}
+
+.TeamCard__PersonLinks{
+    display: flex;
+    justify-content: center;
+}
+
+.TeamCard__PersonLinks{
+    margin-top: 20px;
+}
+
+.TeamCard__PersonLinks img{
+   
+    width: 24px;
+    height: 24px;
+    margin: 0px 6px;
+}

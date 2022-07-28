@@ -1,0 +1,68 @@
+.CartItem{
+    padding: 4px 0;
+    margin: 10px auto;
+    display: flex;
+    position: relative;
+}
+
+.CartItem__ImageContainer{
+    width: 134px;
+    height: 134px;
+    position: relative;
+    
+}
+
+/* .CartItem__ImageContainer::before{
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+    font-family: 'Font Awesome 5 Free';
+    top: 0;
+    content: '\f057';
+    color: red;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+} */
+.CartItem__DeleteIcon{
+    position: absolute;
+    left: 0;
+    top: 2px;
+    transform: translate(-50%, -50%);
+    color: red;
+
+    cursor: pointer;
+}
+.CartItem__DeleteIcon:hover{
+    font-size: 14px;
+    transition: font-size 0.10s ease-in;
+}
+
+
+.CartItem__DeleteIcon svg:hover{
+    
+}
+.CartItem__ImageContainer img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.CartItem__Details {
+    font-family: 'Roboto';
+
+}
+
+.CartItem__Details > h3{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.CartItem__Details > p{
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.CartItem__Details > h5{
+    font-size: 14px;
+    font-weight: 400;
+}

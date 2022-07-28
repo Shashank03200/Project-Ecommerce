@@ -1,0 +1,48 @@
+
+
+.Filter__CheckBoxInput{
+    display: flex;
+    margin: 3px auto; 
+  
+}
+
+.Filter__CheckBoxInput input{
+    margin-right: 14px;
+    cursor: pointer;
+    
+}
+
+.Filters__SectionHeading{
+    font-family:Roboto, sans-serif;
+    font-size: 20px;
+    margin:10px auto;
+}
+
+.Filter__CheckBoxInput label{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Filters__SectionInput.ColorFilter{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));row-gap: 14px;
+    column-gap: 10px;
+}
+
+.Filters__SectionInput.ColorFilter div{
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.Filters__Section{
+    margin: 24px auto;
+}
+.Filters__ActionButton{
+    background-color: #000;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin: 10px auto;
+}

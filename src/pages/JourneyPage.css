@@ -1,0 +1,75 @@
+.JourneyPage{
+    background: url('../assets/images/grass-wallpaper.jpg');
+    /* height: 100vh; */
+    /* background-size: cover; */
+    padding-top: 180px;
+    width: 84%;
+    /* position: static; */
+    margin: 2px auto;
+    color: white;
+}
+
+.JourneyPage__Header{
+    box-shadow: inset 2px 4px 20px rgba(0, 0, 0, 0.8), inset 2px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.JourneyPage__Header > h2{
+    font-family: 'Inter';
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.JourneyPage__Content{
+    font-family: 'Roboto';
+    padding: 10px 60px;
+    background-color: rgba(0, 0, 0, 0.84);
+
+}
+
+.JourneyPage__Content__Item > h3{
+    font-size: 20px;
+    margin-bottom: 14px auto;
+    position: relative;
+
+}
+
+.JourneyPage__Content__Item p{
+    font-size: 12px;
+    padding: 20px 0;
+    
+}
+
+.JourneyPage__Content__Item > h3::before{
+    content: '';
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    object-position: top left;
+    left: -28px;
+    top: 50%;;
+}
+.JourneyPage__Content__Item{
+    position: relative;
+}
+
+.JourneyPage__Content__Item::before{
+    content: '';
+    width: 2px;
+    height: 100%;
+        background-color: white;
+    position: absolute;
+    object-position: top left;
+    left: -26px;
+    top: 0;
+    
+}
+
+.JourneyPage__Content__Item:first-child > h3::before{
+    content: '';
+    
+    
+    
+}

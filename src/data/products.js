@@ -1,0 +1,66 @@
+import ProductImage1 from "../assets/images/shoe1.png";
+import ProductImage2 from "../assets/images/shoe2.png";
+import ProductImage3 from "../assets/images/shoe3.png";
+
+export const productList = [
+  {
+    itemID: "1",
+    itemTitle: "KSL 01",
+    itemDesc: "by KICKSUP and you",
+    itemImages: [ProductImage1],
+    type: "loafers",
+    color: ["blue"],
+    itemPrice: 2000,
+    designTemplate: "3",
+  },
+  {
+    itemID: "2",
+    itemTitle: "KSW 01",
+    itemDesc: "by KICKSUP and you",
+    itemImages: [ProductImage2],
+    type: "sneakers",
+    color: ["blue", "white"],
+    itemPrice: 2500,
+    designTemplate: "2",
+  },
+  {
+    itemID: "3",
+    itemTitle: "Royal S 01",
+    itemDesc: "by KICKSUP and you",
+    itemImages: [ProductImage3],
+    type: "sneakers",
+    color: ["greenyellow", "black"],
+    itemPrice: 6000,
+    designTemplate: "4",
+  },
+  {
+    itemID: "4",
+    itemTitle: "KSL 01",
+    itemDesc: "by KICKSUP and you",
+    itemImages: [ProductImage1],
+    type: "loafers",
+    color: ["blue"],
+    itemPrice: 2000,
+    designTemplate: "3",
+  },
+  {
+    itemID: "5",
+    itemTitle: "KSW 01",
+    itemDesc: "by KICKSUP and you",
+    itemImages: [ProductImage2],
+    type: "sneakers",
+    color: ["blue", "white"],
+    itemPrice: 2500,
+    designTemplate: "2",
+  },
+  {
+    itemID: "6",
+    itemTitle: "Royal S 01",
+    itemDesc: "by KICKSUP and you",
+    itemImages: [ProductImage3],
+    type: "sneakers",
+    color: ["greenyellow", "black"],
+    itemPrice: 6000,
+    designTemplate: 4,
+  },
+];

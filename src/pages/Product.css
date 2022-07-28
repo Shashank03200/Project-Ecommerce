@@ -1,0 +1,156 @@
+.ProductPage{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.70fr 0.25fr;
+    column-gap: 40px;
+}
+
+
+
+.Product__Wrapper{
+    display: grid;
+    
+
+    grid-template-columns: 430px 128px 40%;
+    column-gap: 40px;
+}
+
+.Product__Container{
+    padding: 20px 40px;
+}
+
+.Product__Wrapper  img{
+    width: 100%;
+    
+}
+
+.Product__Wrapper-Images{
+    width: 200px;
+    overflow: hidden;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Product__Wrapper-Images img{
+    object-fit: cover;
+    height: 128px;
+    width: 128px;
+    
+}
+
+.Product__Information{
+    font-family: 'Roboto', sans-serif;
+}
+
+.Product__Information > h2{}
+
+.Product__Offers > p{
+    font-size: 12px;
+    
+}
+
+.Product__Modify{
+    font-family: 'Roboto';
+    font-size: 1rem;
+}
+
+.Product__Modify-Setting{
+    display: flex;
+    width: 100%;
+    
+    padding: 10px 0;
+}
+
+.Product__Modify-Setting:last-child{
+    margin-bottom: 0;
+}
+
+
+.Product__Modify-Values{
+    display: flex;
+    gap: 24px;
+}
+
+.Product__Modify-Values > span{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    min-width: 30px;
+    height: 30px;
+    
+}
+
+.Product__Modify-Values > span > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.Product__Modify-Setting:last-child  span {
+    border: 2px solid rgb(30, 29, 29);
+}
+
+.Product__RightBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Product__Footer{
+    width: 100%;
+}
+
+.Product__AddRating{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+.Product__ActionButtons{
+    padding: 16px 0;
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    
+}
+
+
+.Button-Outlined{
+    border: 2px solid black;
+    border-radius: 2px;
+    color: black;
+    padding: 2px 14px;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    background-color: transparent;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.Button-Solid{
+    background-color: #000;
+    color: white;
+    border-radius: 2px;
+    padding: 2px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+.Product__Information-ProductTitle{
+    margin-bottom: 4px;
+}
+.Product__Ratings{
+    margin-bottom: 16px;
+}
+
+.Product__Modify-Setting p{
+    width: 20%;
+}

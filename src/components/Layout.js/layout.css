@@ -1,0 +1,9 @@
+.Layout__PageContainer{
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 870px) {
+    .Layout__PageContainer{
+        margin-top: 16px;
+    }
+}
