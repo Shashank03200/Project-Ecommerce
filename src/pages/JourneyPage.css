@@ -1,29 +1,35 @@
 .JourneyPage{
-    background: url('../assets/images/grass-wallpaper.jpg');
+    
     /* height: 100vh; */
     /* background-size: cover; */
-    padding-top: 180px;
+    
     width: 84%;
     /* position: static; */
     margin: 2px auto;
     color: white;
 }
 
-.JourneyPage__Header{
-    box-shadow: inset 2px 4px 20px rgba(0, 0, 0, 0.8), inset 2px 8px 10px rgba(0, 0, 0, 0.5);
-}
+
 .JourneyPage__Header > h2{
     font-family: 'Inter';
     font-size: 64px;
+    background: url('../assets/images/grass-wallpaper.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;;
+    background-size: cover;
+    background-position: bottom;
     font-weight: 400;
     text-align: center;
+    padding-top: 180px;
+    -webkit-box-shadow: inset -3px -29px 32px -11px #000000, inset -1px -43px 33px -8px rgba(61,61,61,0.35); 
+box-shadow: inset -3px -29px 32px -11px #000000, inset -1px -43px 33px -8px rgba(61,61,61,0.35);
     
 }
 
 .JourneyPage__Content{
     font-family: 'Roboto';
     padding: 10px 60px;
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(0, 0, 0, 1);
 
 }
 

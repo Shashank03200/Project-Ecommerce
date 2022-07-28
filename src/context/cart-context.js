@@ -49,26 +49,32 @@ const CartContextProvider = ({ children }) => {
     setStorageData("cartData", {
       totalQuantity,
       cartAmount,
-      cartItems,
+      cartItems: prevCartItems,
     });
   };
 
   const removeFromCartHandler = (itemID) => {
     const foundItem = cartItems.find((cartItem) => cartItem.itemID === itemID);
 
-    const prevCartItems = [...cartItems];
+    console.log({ foundItem });
+
+    let prevCartItems = [...cartItems];
     if (foundItem === null) {
       alert("Invalid Operation");
     } else {
       const qty = foundItem.quantity;
       const itemPrice = foundItem.itemPrice;
-      prevCartItems.splice(1, 1);
+      prevCartItems = prevCartItems.filter(
+        (cartItem) => cartItem.itemID !== itemID
+      );
+
       setCartAmount((prev) => prev - qty * itemPrice);
       setTotalQuantity((prev) => prev - qty);
+      setCartItems(prevCartItems);
       setStorageData("cartData", {
         totalQuantity,
         cartAmount,
-        cartItems,
+        cartItems: prevCartItems,
       });
     }
   };

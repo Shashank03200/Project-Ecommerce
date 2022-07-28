@@ -53,6 +53,8 @@ const ProductContextProvider = ({ children }) => {
   const filterApplyHandler = () => {
     //  filter by cost
 
+    let filteredProducts = [...productList];
+
     const costFilters = filters.costCheckInput;
     const between1500And4000 = costFilters.includes("Rs. 1500-4000");
     const between4000And7000 = costFilters.includes("Rs. 4000-7000");
@@ -62,21 +64,22 @@ const ProductContextProvider = ({ children }) => {
     let fp1 = [],
       fp2 = [],
       fp3 = [];
-    if (between1500And4000) {
-      fp1 = productList.filter(
-        (product) => product.itemPrice >= 1500 && product.itemPrice <= 4000
-      );
+    if (costFilters.length > 0) {
+      if (between1500And4000) {
+        fp1 = productList.filter(
+          (product) => product.itemPrice >= 1500 && product.itemPrice <= 4000
+        );
+      }
+      if (between4000And7000) {
+        fp2 = productList.filter(
+          (product) => product.itemPrice >= 4000 && product.itemPrice <= 7000
+        );
+      }
+      if (moreThan7000) {
+        fp3 = productList.filter((product) => product.itemPrice > 7000);
+      }
+      filteredProducts = [...fp1, ...fp2, ...fp3];
     }
-    if (between4000And7000) {
-      fp2 = productList.filter(
-        (product) => product.itemPrice >= 4000 && product.itemPrice <= 7000
-      );
-    }
-    if (moreThan7000) {
-      fp3 = productList.filter((product) => product.itemPrice > 7000);
-    }
-
-    let filteredProducts = [...fp1, ...fp2, ...fp3];
 
     // after filtering by price add other filters (INTERSERCTION)
 
